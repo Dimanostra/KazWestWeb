@@ -11,4 +11,24 @@ $(function() {
       }
     }
   });
+
+  $('.cross-menu > div').hover(
+    function() {
+      $(this).children('.inside').animate(
+        {bottom: '0px'}, 500
+        );
+    },
+    function() {
+      $(this).children('.inside').animate(
+        {bottom: '-100px'}, 500
+        );
+    }
+    );
+  $('.cross-menu > div').hover(
+    function() {
+      $(this).children('.in-dev').fadeIn();
+    },
+    function() {
+      $(this).children('.in-dev').fadeOut();}
+    );
 });
